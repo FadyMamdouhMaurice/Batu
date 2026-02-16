@@ -157,6 +157,21 @@
       <footer>
         Happy Valentine’s Day<br>
         Stay safe on the road 🤍
+
+<div style="text-align:center;margin-top:24px">
+  <button id="nextPageBtn"
+    style="
+      padding:10px 20px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.3);
+      background:rgba(255,255,255,0.06);
+      color:#fff;
+      cursor:pointer;
+      transition:all .3s ease;">
+    See what happened 🤍
+  </button>
+</div>
+
       </footer>
 
     </div>
@@ -181,6 +196,10 @@
     music.play().catch(() => {});
     musicBtn.classList.add("hide");
   });
+
+document.getElementById("nextPageBtn").addEventListener("click", () => {
+  window.location.href = "memory.html";
+});
 
 
   </script>
